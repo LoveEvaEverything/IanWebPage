@@ -1,0 +1,48 @@
+body,html{
+	margin: 0;
+	height: 100%;
+}
+.title_class{
+	background: #00FF00;
+	height: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.menu_class{
+	background: #00E400;
+	width: 15%;
+	height: 80%;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.content_class{
+	background: #00C100;
+	height: 80%;
+}
+.bottom_class{
+	background: #009000;
+	height: 10%;
+}
+.title_div{
+	font-size: 50px;
+	font-family: monospace;
+}
+#menu_item{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 40px;
+	padding-right: 40px;
+	font-size: 20px;
+	font-family: monospace;
+	color: darkblue;
+}
+iframe{
+	width: 85%;
+	height: 100%;
+}
+#menu_item:hover{
+	background-color: ghostwhite;
+}

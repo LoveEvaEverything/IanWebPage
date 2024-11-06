@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#frame_id{
+			width: 600px;
+			height: 300px;
+			background-color: lightblue;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -300px;
+			margin-top: -150px;
+			text-align: center;
+		}
+		#text_id{
+			padding-top: 20px;
+			font-size: 30px;
+			font-family: fantasy;//字体
+		}
+		#body_id{
+			background-color: darkblue;
+		}
+		#title_id{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 50px;
+			color: white;
+			font-family: monospace;
+		}
+	</style>
+	<script type="text/javascript">
+		function login() {
+			var user=document.getElementById('username_id').value;
+			var password=document.getElementById('password_id').value;
+			if(user == "IAN.W" && password == "ianw3308"){
+				location.href="lesson7_001.html";
+			}else{
+				alert("password or username wrong");
+			}
+		}
+	</script>
+</head>
+<body id="body_id">
+	<div id="title_id">Welcome To My Space</div>
+	<div id="frame_id">
+		<div id="text_id">LOGIN</div>
+		<br><br><br>
+		<input type="text" id="username_id">
+		<br><br>
+		<input type="password" id="password_id">
+		<br><br><br>
+		<button onclick="login()">LOGIN</button>
+	</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		button{
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			background-color: black;
+		}
+	</style>
+	<script type="text/javascript">
+		function one() {
+			document.getElementById('fst_id').style.backgroundColor = "red";
+			document.getElementById('snd_id').style.backgroundColor = "black";
+			document.getElementById('trd_id').style.backgroundColor = "black";
+		}
+		function two() {
+			document.getElementById('fst_id').style.backgroundColor = "black";
+			document.getElementById('snd_id').style.backgroundColor = "yellow";
+			document.getElementById('trd_id').style.backgroundColor = "black";
+		}
+		function three() {
+			document.getElementById('snd_id').style.backgroundColor = "green";
+			document.getElementById('trd_id').style.backgroundColor = "green";
+			document.getElementById('fst_id').style.backgroundColor = "green";
+		}
+		function div_fun() {
+			document.getElementById('div_id').innerHTML="Is the lung of Earth";
+		}
+	</script>
+</head>
+<body>
+	<img src="images.jpeg">
+	<button onclick="one()" id="fst_id"></button>
+	<button onclick="two()" id="snd_id"></button>
+	<button onclick="three()" id="trd_id"></button>
+	<img src="images.jpeg">\
+	<br>
+	<div id="div_id" onclick="div_fun()">the tree</div>
+</body>
+</html>
